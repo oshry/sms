@@ -1,0 +1,16 @@
+{
+    "name": "oshry/api",
+    "description": "Api",
+    "authors": [
+        {
+            "name": "oshry",
+            "email": "oshrylevy@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Usecase\\": "Usecase",
+            "Repository\\": "Repository"
+        }
+    }
+}

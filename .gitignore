@@ -1,0 +1,6 @@
+/node_modules/
+## IDE support
+*.buildpath
+*.project
+/.settings
+/.idea/
