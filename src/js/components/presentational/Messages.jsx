@@ -1,24 +1,24 @@
 import React from "react";
 import PropTypes from "prop-types";
 import List from "../container/ListContainer.jsx";
-const Messages = ({ list, country, user, dateFrom, dateTo, handleSort, handleChange }) => (
+const Messages = ({ list, country, user, dateFrom, dateTo, handleSort }) => (
     <div className="form-group">
         <form>
             <div className="form-group">
                 <label htmlFor="">Date From</label>
-                <input id="dateFrom" className="form-control" type="date" onChange={handleChange} value={dateFrom}/>
+                <input id="dateFrom" className="form-control" type="date" placeholder="2007-01-01" defaultValue="2007-01-01"/>
             </div>
             <div className="form-group">
                 <label htmlFor="dateTo">Date To</label>
-                <input id="dateTo" className="form-control" type="date" onChange={handleChange} value={dateTo}/>
+                <input id="dateTo" className="form-control" type="date" defaultValue="2027-01-01"/>
             </div>
             <div className="form-group">
                 <label htmlFor="country">Country Name</label>
-                <input id="country" className="form-control" type="text" onChange={handleChange} value={country}/>
+                <input id="country" className="form-control" type="text" defaultValue={country}/>
             </div>
             <div className="form-group">
                 <label htmlFor="user">User ID</label>
-                <input id="user" className="form-control" type="text" onChange={handleChange} value={user}/>
+                <input id="user" className="form-control" type="text"  defaultValue={user}/>
             </div>
             <button onClick={handleSort.bind(this)}>Filter</button>
         </form>

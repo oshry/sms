@@ -1,6 +1,6 @@
 import { REQUEST_APPS,  RECEIVE_APPS } from './actions';
 
-function apps( state = {isFetching: false, apps: []}, action) {
+function apps( state = {isFetching: false, list: [], country: "", user: "", dateFrom: "", dateTo:""}, action) {
   console.log(action.type);
   switch (action.type) {
     case REQUEST_APPS:

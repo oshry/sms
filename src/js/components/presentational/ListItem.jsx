@@ -9,7 +9,7 @@ const ListItem = ({ text, success, failed}) => (
 );
 ListItem.propTypes = {
     text: PropTypes.string.isRequired,
-    success: PropTypes.number.isRequired,
-    failed: PropTypes.number.isRequired,
+    success: PropTypes.string.isRequired,
+    failed: PropTypes.string.isRequired,
 };
 export default ListItem;
